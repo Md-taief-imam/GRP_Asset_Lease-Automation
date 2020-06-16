@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-16T05:29:05.425Z",
+    "end": "2020-06-16T05:29:57.477Z",
+    "duration": 52052,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b0347497-2508-4f78-83c3-e7ddb460e940",
+      "title": "",
+      "fullFile": "cypress\\integration\\ASTSprint8\\Sprint8.spec.js",
+      "file": "cypress\\integration\\ASTSprint8\\Sprint8.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d4b817eb-033d-475b-908e-436c74df8bb1",
+          "title": "AST Sprint 8 Full test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_1 : GRP Valid Login",
+              "fullTitle": "AST Sprint 8 Full test suite TC_1 : GRP Valid Login",
+              "timedOut": null,
+              "duration": 43396,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.getUserNameField().should('have.attr', 'placeholder', 'ব্যবহারকারীর নাম').type(this.ast.username).should('have.value', this.ast.username);\ncy.wait(2000);\nloginPage.getPasswordField().type(this.ast.password);\ncy.wait(2000);\nloginPage.getEnterButton().click();\ncy.wait(2000);\ndashboardPage.getASTAvatar().click();\ncy.wait(3000);\n/* leftNavMenu.getDropDownMenu().contains('ইজারা').click()\n cy.wait(1000)\n leftNavMenu.getleaseAttributeSubMenu().contains('বৈশিষ্টসমূহ').click()\n cy.wait(2000) \n //receiveGoodsPage.getCardHeader().should('include.text', 'বৈশিষ্টসমূহের তালিকা')\n   attributesAddPage.getAddAttributesButton().click()\n cy.wait(2000)\n attributesAddPage.getAttNameFieldEn().type(this.ast.attNameFieldEn)\n cy.wait(2000)*/\n// receiveGoodsPage.getCardHeader().should('include.text', 'বৈশিষ্ট্য তৈরী')",
+              "err": {},
+              "uuid": "50399259-f87b-4e10-b99c-757e071059b4",
+              "parentUUID": "d4b817eb-033d-475b-908e-436c74df8bb1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "50399259-f87b-4e10-b99c-757e071059b4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 43396,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}
