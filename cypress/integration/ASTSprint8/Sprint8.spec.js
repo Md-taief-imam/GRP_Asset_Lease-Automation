@@ -16,7 +16,7 @@ import CommonPage from '../../support/Common Pages/CommonPage'
 
 describe('AST Sprint 8 Full test suite', function(){
     beforeEach(function(){             //load all data befofe all Test Case 
-        cy.fixture('example').then(function(ast){
+        cy.fixture('AssetSQA').then(function(ast){
             this.ast = ast
         })
         cy.visit(Cypress.env('url'))      //got url from cypress.json 
@@ -212,7 +212,7 @@ describe('AST Sprint 8 Full test suite', function(){
         cy.wait(2000)
         leaseableassetpage.getJLNoBn().click().type(this.ast.JLno)
         cy.wait(2000)
-        leaseableassetpage.getMoujaEn().click().type(this.ast.mouja)
+       /* leaseableassetpage.getMoujaEn().click().type(this.ast.mouja)
         cy.wait(2000)
         leaseableassetpage.getMoujaBn().click().type(this.ast.mouja)
         cy.wait(2000)
@@ -236,7 +236,7 @@ describe('AST Sprint 8 Full test suite', function(){
         cy.wait(2000)
         leaseableassetpage.getDecimalBn().click().type(this.ast.decimalno)
         cy.wait(2000)
-
+*/
         commonPage.getSubmit().should('include.text','দাখিল করুন').click()
         cy.wait(2000)
         
@@ -266,7 +266,7 @@ describe('AST Sprint 8 Full test suite', function(){
         leaseableassetpage.getOverAllComment().click().type(this.ast.overallcomment1)
         cy.wait(2000)
 
-
+/*
         leaseableassetpage.getJLNoEn().click().type(this.ast.upojogita)
         cy.wait(2000)
         leaseableassetpage.getJLNoBn().click().type(this.ast.upojogita)
@@ -276,7 +276,7 @@ describe('AST Sprint 8 Full test suite', function(){
         leaseableassetpage.getMoujaBn().click().type(this.ast.apartmentno)
         cy.wait(2000)
 
-
+*/
         commonPage.getSubmit().should('include.text','দাখিল করুন').click()
         cy.wait(2000)       
         commonPage.getConfirmPopUpHeader().should('include.text', 'নিশ্চিত করুন')
@@ -383,7 +383,8 @@ describe('AST Sprint 8 Full test suite', function(){
 
         leftNavMenu.getDropDownMenu().contains('ইজারা').click()
         cy.wait(1000)
-        leftNavMenu.getContractList().contains('চুক্তির তালিকা').click()
+        leftNavMenu.getContractList().contains('চুক্তির তালিকা').click()  //for Staging 
+    //    leftNavMenu.getContractList().contains('ইজারার চুক্তি').click()    //for SQA
         cy.wait(2000) 
 
 

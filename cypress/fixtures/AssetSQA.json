@@ -1,0 +1,95 @@
+{
+    "username": "mors0001",
+    "password": "123456789",
+  
+    "attNameFieldEn": "CS No",
+    "attNameFieldBn": "সি এস নং",
+    "attDescription": "This test data inputted for Test Automation ",
+  
+    "leaseNameFieldEn":"Sylhet",
+    "leaseNameFieldBn":"সিলেট",
+    "leaseDescription":"This test data inputted for Test Automation",
+  
+    "leasetype": "জমি",
+    "attributetype": "সি এস নং",
+  
+    "area": "সিলেট",
+    "type": "জমি",
+  
+     "leasetype0": "জমি",
+     "leasearea0":"সিলেট",
+     "leasetype0En":"Munsef Bari Field",
+     "leasetype0Bn":"মুন্সেফ বাড়ির মাঠ ",
+     "oldrefno": "Test01/15/06/2020",
+     "overallcomment":"এটা টেস্ট অটোমেশন পরীক্ষার জন্যে ইনপুটেড ডাটা -১৫ জুন (জমির জন্যে )",
+  
+     "JLno":"11",
+     "mouja":"12",
+     "khotyanno":"13",
+     "jomirporiman":"14",
+     "jomirsreni":"15",
+     "daagno":"16",
+     "decimalno":"17",
+  
+     "leasetype1": "ভবন",
+     "leasearea1":"সিলেট",
+     "parent1":"মুন্সেফ বাড়ির মাঠ",
+     "leasetype1En":"Passport Bhavan",
+     "leasetype1Bn":"পাসপোর্ট ভবন  ",
+     "oldrefno1": "Test01/15/06/2020",
+     "overallcomment1":"এটা টেস্ট অটোমেশন পরীক্ষার জন্যে ইনপুটেড ডাটা -১৫ জুন (ভবনের জন্যে )",
+  
+     "upojogita":"Testing Purpose ",
+     "apartmentno":"7E",
+     
+     "leasetype2": "তলা",
+     "leasearea2":"সিলেট",
+     "parent2":"পাসপোর্ট ভবন",
+     "leasetype2En":"3rd Floor ",
+     "leasetype2Bn":"৩য় তলা ",
+     "oldrefno2": "Test01/15/06/2020",
+     "overallcomment2":"এটা টেস্ট অটোমেশন পরীক্ষার জন্যে ইনপুটেড ডাটা -১৫ জুন ( তলার জন্যে  )",
+  
+  
+     "leasetype3": "অ্যাপার্টমেন্ট",
+     "leasearea3":"সিলেট",
+     "parent3":"৩য় তলা",
+     "leasetype3En":"3-A ",
+     "leasetype3Bn":"৩-এ ",
+     "oldrefno3": "Test01/15/06/2020",
+     "overallcomment3":"এটা টেস্ট অটোমেশন পরীক্ষার জন্যে ইনপুটেড ডাটা -১৫ জুন ( এপার্টমেন্টের জন্যে  )",
+  
+  
+     
+     "leasetype4": "কক্ষ",
+     "leasearea4":"সিলেট",
+     "parent4":"৩-এ ",
+     "leasetype4En":"401 ",
+     "leasetype4Bn":"৪০১",
+     "oldrefno4": "Test01/15/06/2020",
+     "overallcomment4":"এটা টেস্ট অটোমেশন পরীক্ষার জন্যে ইনপুটেড ডাটা -১৫ জুন ( কক্ষের জন্যে  )",
+  
+  
+  
+     "ijaradar":" সুন্দরবন কুরিয়ার, হেডঅফিস ",
+     "area1":"সিলেট",
+  
+  
+     "StartYear": "২০২০",
+     "StartMonth": "জুন",
+     "StartDay": "১৫",
+     "EndDay": "১৬",
+     "EndDay1": "২০",
+     "ijaraporiman": "40000",
+     "ijaraporimanBn":"৪০০০০ ",
+     "durationtype":"সাপ্তাহিক",
+     "ijaradhoron":"এটা সাময়িক ব্যবহারের জন্যে নেয়া হচ্ছে ",
+     "ijarauddheshho":"টেস্ট অটোমেশন পরীক্ষার জন্যে এই লিজটি বানানো হচ্ছে  - ১৫ জুন ",
+  
+     
+  
+     "pagination":"সকল"
+  
+  
+  
+  }
