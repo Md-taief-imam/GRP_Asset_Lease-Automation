@@ -16,7 +16,7 @@ import CommonPage from '../../support/Common Pages/CommonPage'
 
 describe('AST Sprint 8 Full test suite', function(){
     beforeEach(function(){             //load all data befofe all Test Case 
-        cy.fixture('AssetSQA').then(function(ast){
+        cy.fixture('AssetStaging').then(function(ast){
             this.ast = ast
         })
         cy.visit(Cypress.env('url'))      //got url from cypress.json 
@@ -38,7 +38,7 @@ describe('AST Sprint 8 Full test suite', function(){
 
 
 
-    it.only('TC_1 : GRP Valid Login', function(){
+    it('TC_1 : GRP Valid Login', function(){
         loginPage.getUserNameField().should('have.attr', 'placeholder', 'ব্যবহারকারীর নাম').type(this.ast.username).should('have.value', this.ast.username)
         cy.wait(2000)
         loginPage.getPasswordField().type(this.ast.password)
@@ -383,8 +383,8 @@ describe('AST Sprint 8 Full test suite', function(){
 
         leftNavMenu.getDropDownMenu().contains('ইজারা').click()
         cy.wait(1000)
-        leftNavMenu.getContractList().contains('চুক্তির তালিকা').click()  //for Staging 
-    //    leftNavMenu.getContractList().contains('ইজারার চুক্তি').click()    //for SQA
+     //   leftNavMenu.getContractList().contains('চুক্তির তালিকা').click()  //for Staging 
+        leftNavMenu.getContractList().contains('ইজারার চুক্তি').click()    //for SQA
         cy.wait(2000) 
 
 
@@ -446,7 +446,7 @@ describe('AST Sprint 8 Full test suite', function(){
         
     })
 
-    it('TC_8: Contract Renewal ',function(){
+    it.only('TC_8: Contract Renewal ',function(){
         loginPage.getUserNameField().should('have.attr', 'placeholder', 'ব্যবহারকারীর নাম').type(this.ast.username).should('have.value', this.ast.username)
         cy.wait(2000)
         loginPage.getPasswordField().type(this.ast.password)
@@ -486,7 +486,7 @@ describe('AST Sprint 8 Full test suite', function(){
 
         commonPage.getEndcalenderIcon().click()
         cy.wait(2000)
-        cy.calendar(this.ast.StartYear, this.ast.StartMonth, this.ast.EndDay1)
+        cy.calendar(this.ast.StartYear, this.ast.EndMonth, this.ast.EndDay1)
         cy.wait(2000)
        
         contractList.getContractSaveButton().click()

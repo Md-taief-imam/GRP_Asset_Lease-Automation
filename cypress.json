@@ -5,7 +5,7 @@
     "viewportWidth": 1366,
 
     "env":{
-        "url": "http://sqa.grp.gov.bd/"
+        "url": "http://staging.grp.gov.bd/"
     }
         
 }
